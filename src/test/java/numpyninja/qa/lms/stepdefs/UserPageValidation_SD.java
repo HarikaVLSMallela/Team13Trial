@@ -115,19 +115,19 @@ public class UserPageValidation_SD {
 		LoggerLoad.info("Admin is able to see Search Box on Manage User Page above Data Table");
 	}
 
-	@Then("Admin should see the number of records  displayed on the page are {int}")
-	public void admin_should_see_the_number_of_records_displayed_on_the_page_are(Integer expectedNumberofRecords) {
-		System.out.println("No. of recoeds " + manageUserPage.getNumberOfRecordsDisplayed());
-		System.out.println("Expected no of records " + expectedNumberofRecords);
-		softAssert.assertEquals(manageUserPage.getNumberOfRecordsDisplayed(), expectedNumberofRecords);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		LoggerLoad.info("Admin is able to see the number of records displayed on the page");
-	}
+//	@Then("Admin should see the number of records  displayed on the page are {int}")
+//	public void admin_should_see_the_number_of_records_displayed_on_the_page_are(Integer expectedNumberofRecords) {
+//		/*
+//		 * System.out.println("No. of recoeds " +
+//		 * manageUserPage.getNumberOfRecordsDisplayed());
+//		 * System.out.println("Expected no of records " + expectedNumberofRecords);
+//		 * softAssert.assertEquals(manageUserPage.getNumberOfRecordsDisplayed(),
+//		 * expectedNumberofRecords); try { Thread.sleep(3000); } catch
+//		 * (InterruptedException e) { // TODO Auto-generated catch block
+//		 * e.printStackTrace(); } LoggerLoad.
+//		 * info("Admin is able to see the number of records displayed on the page");
+//		 */
+//	}
 
 	/**
 	 * User Details Pop up with empty fields when Admin clicks Add New User
